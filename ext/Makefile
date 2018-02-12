@@ -47,7 +47,7 @@ RUBY_EXTCONF_H =
 CFLAGS   =  -fPIC -g -O2 $(cflags) 
 INCFLAGS = -I. -I. -I/usr/local/lib/ruby/1.8/i686-linux -I.
 DEFS     = -D_FILE_OFFSET_BITS=64
-CPPFLAGS =   -D_FILE_OFFSET_BITS=64 
+CPPFLAGS =   -D_FILE_OFFSET_BITS=64 -Wformat=0 -Wno-format-security 
 CXXFLAGS = $(CFLAGS) 
 ldflags  = -L.  -rdynamic -Wl,-export-dynamic
 dldflags = 
