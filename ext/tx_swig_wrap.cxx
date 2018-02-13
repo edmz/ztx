@@ -1851,10 +1851,10 @@ static swig_module_info swig_module = {swig_types, 17, 0, 0, 0, 0};
 
 /* -------- TYPES TABLE (END) -------- */
 
-#define SWIG_init    Init_tx
-#define SWIG_name    "Tx"
+#define SWIG_init    Init_tx_core
+#define SWIG_name    "Tx_core"
 
-static VALUE mTx;
+static VALUE mTx_core;
 
 #define SWIG_RUBY_THREAD_BEGIN_BLOCK
 #define SWIG_RUBY_THREAD_END_BLOCK
@@ -4636,7 +4636,7 @@ static swig_class SwigClassGC_VALUE;
 
 
 /*
-  Document-method: Tx::GC_VALUE.inspect
+  Document-method: Tx_core::GC_VALUE.inspect
 
   call-seq:
     inspect -> VALUE
@@ -4664,7 +4664,7 @@ fail:
 
 
 /*
-  Document-method: Tx::GC_VALUE.to_s
+  Document-method: Tx_core::GC_VALUE.to_s
 
   call-seq:
     to_s -> VALUE
@@ -4734,7 +4734,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.dup
+  Document-method: Tx_core::ConstIterator.dup
 
   call-seq:
     dup -> ConstIterator
@@ -4767,7 +4767,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.inspect
+  Document-method: Tx_core::ConstIterator.inspect
 
   call-seq:
     inspect -> VALUE
@@ -4800,7 +4800,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.to_s
+  Document-method: Tx_core::ConstIterator.to_s
 
   call-seq:
     to_s -> VALUE
@@ -5055,7 +5055,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.==
+  Document-method: Tx_core::ConstIterator.==
 
   call-seq:
     ==(x) -> bool
@@ -5099,7 +5099,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.+
+  Document-method: Tx_core::ConstIterator.+
 
   call-seq:
     +(n) -> ConstIterator
@@ -5150,7 +5150,7 @@ fail:
 
 
 /*
-  Document-method: Tx::ConstIterator.-
+  Document-method: Tx_core::ConstIterator.-
 
   call-seq:
     -(n) -> ConstIterator
@@ -5317,7 +5317,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.dup
+  Document-method: Tx_core::Iterator.dup
 
   call-seq:
     dup -> Iterator
@@ -5572,7 +5572,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.inspect
+  Document-method: Tx_core::Iterator.inspect
 
   call-seq:
     inspect -> VALUE
@@ -5605,7 +5605,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.to_s
+  Document-method: Tx_core::Iterator.to_s
 
   call-seq:
     to_s -> VALUE
@@ -5638,7 +5638,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.==
+  Document-method: Tx_core::Iterator.==
 
   call-seq:
     ==(x) -> bool
@@ -5682,7 +5682,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.+
+  Document-method: Tx_core::Iterator.+
 
   call-seq:
     +(n) -> Iterator
@@ -5733,7 +5733,7 @@ fail:
 
 
 /*
-  Document-method: Tx::Iterator.-
+  Document-method: Tx_core::Iterator.-
 
   call-seq:
     -(n) -> Iterator
@@ -5878,7 +5878,7 @@ static swig_class SwigClassStringVector;
 
 
 /*
-  Document-method: Tx::StringVector.dup
+  Document-method: Tx_core::StringVector.dup
 
   call-seq:
     dup -> StringVector
@@ -5911,7 +5911,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.inspect
+  Document-method: Tx_core::StringVector.inspect
 
   call-seq:
     inspect -> VALUE
@@ -5944,7 +5944,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.to_a
+  Document-method: Tx_core::StringVector.to_a
 
   call-seq:
     to_a -> VALUE
@@ -5977,7 +5977,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.to_s
+  Document-method: Tx_core::StringVector.to_s
 
   call-seq:
     to_s -> VALUE
@@ -6010,7 +6010,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.slice
+  Document-method: Tx_core::StringVector.slice
 
   call-seq:
     slice(i, length) -> VALUE
@@ -6065,7 +6065,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.each
+  Document-method: Tx_core::StringVector.each
 
   call-seq:
     each -> StringVector
@@ -6137,7 +6137,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.select
+  Document-method: Tx_core::StringVector.select
 
   call-seq:
     select -> StringVector
@@ -6170,7 +6170,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.delete_at
+  Document-method: Tx_core::StringVector.delete_at
 
   call-seq:
     delete_at(i) -> VALUE
@@ -6211,7 +6211,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.at
+  Document-method: Tx_core::StringVector.at
 
   call-seq:
     at(i) -> VALUE
@@ -6252,7 +6252,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.[]
+  Document-method: Tx_core::StringVector.[]
 
   call-seq:
     [](i, length) -> VALUE
@@ -6440,7 +6440,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.[]=
+  Document-method: Tx_core::StringVector.[]=
 
   call-seq:
     []=(i, x) -> VALUE
@@ -6630,7 +6630,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.reject!
+  Document-method: Tx_core::StringVector.reject!
 
   call-seq:
     reject! -> StringVector
@@ -6663,7 +6663,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.pop
+  Document-method: Tx_core::StringVector.pop
 
   call-seq:
     pop -> VALUE
@@ -6696,7 +6696,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.push
+  Document-method: Tx_core::StringVector.push
 
   call-seq:
     push(e) -> std::vector< std::string >::value_type const
@@ -6744,7 +6744,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.reject
+  Document-method: Tx_core::StringVector.reject
 
   call-seq:
     reject -> StringVector
@@ -6777,7 +6777,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.shift
+  Document-method: Tx_core::StringVector.shift
 
   call-seq:
     shift -> VALUE
@@ -6810,7 +6810,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.insert
+  Document-method: Tx_core::StringVector.insert
 
   call-seq:
     insert(pos, argc) -> StringVector
@@ -6860,7 +6860,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.unshift
+  Document-method: Tx_core::StringVector.unshift
 
   call-seq:
     unshift(argc) -> StringVector
@@ -6945,7 +6945,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.empty?
+  Document-method: Tx_core::StringVector.empty?
 
   call-seq:
     empty? -> bool
@@ -6978,7 +6978,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.size
+  Document-method: Tx_core::StringVector.size
 
   call-seq:
     size -> std::vector< std::string >::size_type
@@ -7043,7 +7043,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.begin
+  Document-method: Tx_core::StringVector.begin
 
   call-seq:
     begin -> std::vector< std::string >::iterator
@@ -7078,7 +7078,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.end
+  Document-method: Tx_core::StringVector.end
 
   call-seq:
     end -> std::vector< std::string >::iterator
@@ -7113,7 +7113,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.rbegin
+  Document-method: Tx_core::StringVector.rbegin
 
   call-seq:
     rbegin -> std::vector< std::string >::reverse_iterator
@@ -7148,7 +7148,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.rend
+  Document-method: Tx_core::StringVector.rend
 
   call-seq:
     rend -> std::vector< std::string >::reverse_iterator
@@ -7183,7 +7183,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.clear
+  Document-method: Tx_core::StringVector.clear
 
   call-seq:
     clear
@@ -7260,7 +7260,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.resize
+  Document-method: Tx_core::StringVector.resize
 
   call-seq:
     resize(new_size)
@@ -7299,7 +7299,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.erase
+  Document-method: Tx_core::StringVector.erase
 
   call-seq:
     erase(pos) -> std::vector< std::string >::iterator
@@ -7565,7 +7565,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.front
+  Document-method: Tx_core::StringVector.front
 
   call-seq:
     front -> std::vector< std::string >::value_type const &
@@ -7598,7 +7598,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.back
+  Document-method: Tx_core::StringVector.back
 
   call-seq:
     back -> std::vector< std::string >::value_type const &
@@ -7631,7 +7631,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.assign
+  Document-method: Tx_core::StringVector.assign
 
   call-seq:
     assign(n, x)
@@ -7684,7 +7684,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.resize
+  Document-method: Tx_core::StringVector.resize
 
   call-seq:
     resize(new_size)
@@ -7791,7 +7791,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.insert
+  Document-method: Tx_core::StringVector.insert
 
   call-seq:
     insert(pos, argc) -> StringVector
@@ -8000,7 +8000,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.reserve
+  Document-method: Tx_core::StringVector.reserve
 
   call-seq:
     reserve(n)
@@ -8038,7 +8038,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.capacity
+  Document-method: Tx_core::StringVector.capacity
 
   call-seq:
     capacity -> std::vector< std::string >::size_type
@@ -8095,7 +8095,7 @@ fail:
 
 
 /*
-  Document-method: Tx::StringVector.delete
+  Document-method: Tx_core::StringVector.delete
 
   call-seq:
     delete(val) -> VALUE
@@ -9883,11 +9883,11 @@ SWIG_PropagateClientData(void) {
 #ifdef __cplusplus
 extern "C"
 #endif
-SWIGEXPORT void Init_tx(void) {
+SWIGEXPORT void Init_tx_core(void) {
   size_t i;
   
   SWIG_InitRuntime();
-  mTx = rb_define_module("Tx");
+  mTx_core = rb_define_module("Tx_core");
   
   SWIG_InitializeModule(0);
   for (i = 0; i < swig_module.size; i++) {
@@ -9896,7 +9896,7 @@ SWIGEXPORT void Init_tx(void) {
   
   SWIG_RubyInitializeTrackings();
   
-  SwigClassGC_VALUE.klass = rb_define_class_under(mTx, "GC_VALUE", rb_cObject);
+  SwigClassGC_VALUE.klass = rb_define_class_under(mTx_core, "GC_VALUE", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_swig__GC_VALUE, (void *) &SwigClassGC_VALUE);
   rb_undef_alloc_func(SwigClassGC_VALUE.klass);
   rb_define_method(SwigClassGC_VALUE.klass, "inspect", VALUEFUNC(_wrap_GC_VALUE_inspect), -1);
@@ -9907,7 +9907,7 @@ SWIGEXPORT void Init_tx(void) {
   swig::SwigGCReferences::initialize();
   
   
-  SwigClassConstIterator.klass = rb_define_class_under(mTx, "ConstIterator", rb_cObject);
+  SwigClassConstIterator.klass = rb_define_class_under(mTx_core, "ConstIterator", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_swig__ConstIterator, (void *) &SwigClassConstIterator);
   rb_undef_alloc_func(SwigClassConstIterator.klass);
   rb_define_method(SwigClassConstIterator.klass, "value", VALUEFUNC(_wrap_ConstIterator_value), -1);
@@ -9923,7 +9923,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassConstIterator.destroy = (void (*)(void *)) free_swig_ConstIterator;
   SwigClassConstIterator.trackObjects = 0;
   
-  SwigClassIterator.klass = rb_define_class_under(mTx, "Iterator", ((swig_class *) SWIGTYPE_p_swig__ConstIterator->clientdata)->klass);
+  SwigClassIterator.klass = rb_define_class_under(mTx_core, "Iterator", ((swig_class *) SWIGTYPE_p_swig__ConstIterator->clientdata)->klass);
   SWIG_TypeClientData(SWIGTYPE_p_swig__Iterator, (void *) &SwigClassIterator);
   rb_undef_alloc_func(SwigClassIterator.klass);
   rb_define_method(SwigClassIterator.klass, "value=", VALUEFUNC(_wrap_Iterator_valuee___), -1);
@@ -9939,7 +9939,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassIterator.destroy = (void (*)(void *)) free_swig_Iterator;
   SwigClassIterator.trackObjects = 0;
   
-  SwigClassStringVector.klass = rb_define_class_under(mTx, "StringVector", rb_cObject);
+  SwigClassStringVector.klass = rb_define_class_under(mTx_core, "StringVector", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_std__vectorT_std__string_std__allocatorT_std__string_t_t, (void *) &SwigClassStringVector);
   rb_include_module(SwigClassStringVector.klass, rb_eval_string("Enumerable"));
   rb_define_alloc_func(SwigClassStringVector.klass, _wrap_StringVector_allocate);
@@ -9987,7 +9987,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassStringVector.destroy = (void (*)(void *)) free_std_vector_Sl_std_string_Sg_;
   SwigClassStringVector.trackObjects = 0;
   
-  SwigClassBuilder.klass = rb_define_class_under(mTx, "Builder", rb_cObject);
+  SwigClassBuilder.klass = rb_define_class_under(mTx_core, "Builder", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_Builder, (void *) &SwigClassBuilder);
   rb_define_alloc_func(SwigClassBuilder.klass, _wrap_Builder_allocate);
   rb_define_method(SwigClassBuilder.klass, "initialize", VALUEFUNC(_wrap_new_Builder), -1);
@@ -10000,7 +10000,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassBuilder.destroy = (void (*)(void *)) free_Builder;
   SwigClassBuilder.trackObjects = 0;
   
-  SwigClassUnsafeIndex.klass = rb_define_class_under(mTx, "UnsafeIndex", rb_cObject);
+  SwigClassUnsafeIndex.klass = rb_define_class_under(mTx_core, "UnsafeIndex", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_UnsafeIndex, (void *) &SwigClassUnsafeIndex);
   rb_define_alloc_func(SwigClassUnsafeIndex.klass, _wrap_UnsafeIndex_allocate);
   rb_define_method(SwigClassUnsafeIndex.klass, "initialize", VALUEFUNC(_wrap_new_UnsafeIndex), -1);
@@ -10017,7 +10017,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassUnsafeIndex.destroy = (void (*)(void *)) free_UnsafeIndex;
   SwigClassUnsafeIndex.trackObjects = 0;
   
-  SwigClassMapBuilder.klass = rb_define_class_under(mTx, "MapBuilder", rb_cObject);
+  SwigClassMapBuilder.klass = rb_define_class_under(mTx_core, "MapBuilder", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_MapBuilder, (void *) &SwigClassMapBuilder);
   rb_define_alloc_func(SwigClassMapBuilder.klass, _wrap_MapBuilder_allocate);
   rb_define_method(SwigClassMapBuilder.klass, "initialize", VALUEFUNC(_wrap_new_MapBuilder), -1);
@@ -10030,7 +10030,7 @@ SWIGEXPORT void Init_tx(void) {
   SwigClassMapBuilder.destroy = (void (*)(void *)) free_MapBuilder;
   SwigClassMapBuilder.trackObjects = 0;
   
-  SwigClassUnsafeMap.klass = rb_define_class_under(mTx, "UnsafeMap", rb_cObject);
+  SwigClassUnsafeMap.klass = rb_define_class_under(mTx_core, "UnsafeMap", rb_cObject);
   SWIG_TypeClientData(SWIGTYPE_p_UnsafeMap, (void *) &SwigClassUnsafeMap);
   rb_define_alloc_func(SwigClassUnsafeMap.klass, _wrap_UnsafeMap_allocate);
   rb_define_method(SwigClassUnsafeMap.klass, "initialize", VALUEFUNC(_wrap_new_UnsafeMap), -1);

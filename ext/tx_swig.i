@@ -1,4 +1,4 @@
-%module tx
+%module tx_core
 
 %include "std_string.i"
 %include "std_vector.i"
